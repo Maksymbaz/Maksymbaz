@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Maksymbaz
 - 👀 I’m interested in web development
-- 🌱 I’m currently learning vue.js
+- 🌱 I’m currently learning js
 - 💞️ I’m looking to collaborate on ((tbd))
 - 📫 How to reach me t.me @maks_dd
 
