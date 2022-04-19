@@ -3,7 +3,8 @@ let words = 'beach bean beauty because become beef before';
 
 let arr = [];
 arr = words.split(' ');
-let a = 'toy',
+let count = 0,
+  a = 'toy',
   b = 'upper',
   c = 'upset',
   e = 'year',
@@ -88,6 +89,7 @@ for (i = 0; i < arr.length; i++) {
                               k,
                               arr[p]
                             );
+                            count++;
                           }
                         }
                       }
@@ -102,6 +104,7 @@ for (i = 0; i < arr.length; i++) {
     }
   }
 }
+console.log(count);
 
 // // let sol = [
 // //     ['crazy', 'upper', 'coyote'],
