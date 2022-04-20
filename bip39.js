@@ -136,3 +136,16 @@ let count = 0,
 //   }
 // }
 // console.log(count);
+
+for (i = 0; i < arr.length; i++) {
+  if (
+    arr[i] ==
+    arr.map((a, idx) => {
+      return idx;
+    })
+  ) {
+    idx0 = i;
+    console.log(arr[i]);
+  }
+}
+console.log(idx0);
