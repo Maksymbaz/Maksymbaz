@@ -4,123 +4,135 @@ const words =
 
 const arr = words.split(' ');
 let count = 0,
-  a = 'toy',
-  b = 'upper',
-  c = 'upset',
-  e = 'year',
-  k = 'yellow',
+  known = 'toy upper upset year yellow',
+  // a = 'toy',
+  // b = 'upper',
+  // c = 'upset',
+  // e = 'year',
+  // k = 'yellow',
   idx0,
   idx1,
   idx2,
   idx4,
   idx10;
 
-for (i = 0; i < arr.length; i++) {
-  if (arr[i] == a) {
-    idx0 = i;
-  } else if (arr[i] == b) {
-    idx1 = i;
-  } else if (arr[i] == c) {
-    idx2 = i;
-  } else if (arr[i] == e) {
-    idx4 = i;
-  } else if (arr[i] == k) {
-    idx10 = i;
-  }
-}
+// for (i = 0; i < arr.length; i++) {
+//   if (
+//     arr[i] ==
+//     arr.map(a => {
+//       return a;
+//     })
+//   ) {
+//     idx0 = i;
+//   } else if (arr[i] == b) {
+//     idx1 = i;
+//   } else if (arr[i] == c) {
+//     idx2 = i;
+//   } else if (arr[i] == e) {
+//     idx4 = i;
+//   } else if (arr[i] == k) {
+//     idx10 = i;
+//   }
+// }
 
-for (i = 0; i < arr.length; i++) {
-  if (i != idx0 && i != idx1 && i != idx2 && i != idx4 && i != idx10) {
-    for (let j = 0; j < arr.length; j++) {
-      if (
-        arr[j] != a &&
-        arr[j] != b &&
-        arr[j] != c &&
-        arr[j] != k &&
-        arr[j] != arr[i]
-      ) {
-        for (let l = 0; l < arr.length; l++) {
-          if (
-            arr[l] != a &&
-            arr[l] != b &&
-            arr[l] != c &&
-            arr[l] != k &&
-            arr[l] != arr[i] &&
-            arr[l] != arr[j]
-          ) {
-            for (let m = 0; m < arr.length; m++) {
-              if (
-                arr[m] != a &&
-                arr[m] != b &&
-                arr[m] != c &&
-                arr[m] != k &&
-                arr[m] != arr[i] &&
-                arr[m] != arr[j] &&
-                arr[m] != arr[l]
-              ) {
-                for (let n = 0; n < arr.length; n++) {
-                  if (
-                    arr[n] != a &&
-                    arr[n] != b &&
-                    arr[n] != c &&
-                    arr[n] != k &&
-                    arr[n] != arr[i] &&
-                    arr[n] != arr[j] &&
-                    arr[n] != arr[l] &&
-                    arr[n] != arr[m]
-                  ) {
-                    for (let o = 0; o < arr.length; o++) {
-                      if (
-                        arr[o] != a &&
-                        arr[o] != b &&
-                        arr[o] != c &&
-                        arr[o] != k &&
-                        arr[o] != arr[i] &&
-                        arr[o] != arr[j] &&
-                        arr[o] != arr[l] &&
-                        arr[o] != arr[m] &&
-                        arr[o] != arr[n]
-                      ) {
-                        for (let p = 0; p < arr.length; p++) {
-                          if (
-                            arr[p] != a &&
-                            arr[p] != b &&
-                            arr[p] != c &&
-                            arr[p] != k &&
-                            arr[p] != arr[i] &&
-                            arr[p] != arr[j] &&
-                            arr[p] != arr[o] &&
-                            arr[p] != arr[l] &&
-                            arr[p] != arr[m] &&
-                            arr[p] != arr[n]
-                          ) {
-                            console.log(
-                              arr[idx0],
-                              arr[idx1],
-                              arr[idx2],
-                              arr[i],
-                              arr[idx4],
-                              arr[j],
-                              arr[l],
-                              arr[m],
-                              arr[n],
-                              arr[o],
-                              arr[idx10],
-                              arr[p]
-                            );
-                            count++;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-console.log(count);
+// for (i = 0; i < arr.length; i++) {
+//   if (i != idx0 && i != idx1 && i != idx2 && i != idx4 && i != idx10) {
+//     for (let j = 0; j < arr.length; j++) {
+//       if (
+//         j != idx0 &&
+//         j != idx1 &&
+//         j != idx2 &&
+//         j != idx4 &&
+//         j != idx10 &&
+//         j != i
+//       ) {
+//         for (let l = 0; l < arr.length; l++) {
+//           if (
+//             l != idx0 &&
+//             l != idx1 &&
+//             l != idx2 &&
+//             l != idx4 &&
+//             l != idx10 &&
+//             l != i &&
+//             l != j
+//           ) {
+//             for (let m = 0; m < arr.length; m++) {
+//               if (
+//                 m != idx0 &&
+//                 m != idx1 &&
+//                 m != idx2 &&
+//                 m != idx4 &&
+//                 m != idx10 &&
+//                 m != i &&
+//                 m != j &&
+//                 m != l
+//               ) {
+//                 for (let n = 0; n < arr.length; n++) {
+//                   if (
+//                     n != idx0 &&
+//                     n != idx1 &&
+//                     n != idx2 &&
+//                     n != idx4 &&
+//                     n != idx10 &&
+//                     n != i &&
+//                     n != j &&
+//                     n != l &&
+//                     n != m
+//                   ) {
+//                     for (let o = 0; o < arr.length; o++) {
+//                       if (
+//                         o != idx0 &&
+//                         o != idx1 &&
+//                         o != idx2 &&
+//                         o != idx4 &&
+//                         o != idx10 &&
+//                         o != i &&
+//                         o != j &&
+//                         o != l &&
+//                         o != m &&
+//                         o != n
+//                       ) {
+//                         for (let p = 0; p < arr.length; p++) {
+//                           if (
+//                             p != idx0 &&
+//                             p != idx1 &&
+//                             p != idx2 &&
+//                             p != idx4 &&
+//                             p != idx10 &&
+//                             p != i &&
+//                             p != j &&
+//                             p != l &&
+//                             p != m &&
+//                             p != n &&
+//                             p != o
+//                           ) {
+//                             console.log(
+//                               arr[idx0],
+//                               arr[idx1],
+//                               arr[idx2],
+//                               arr[i],
+//                               arr[idx4],
+//                               arr[j],
+//                               arr[l],
+//                               arr[m],
+//                               arr[n],
+//                               arr[o],
+//                               arr[idx10],
+//                               arr[p]
+//                             );
+//                             count++;
+//                           }
+//                         }
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// console.log(count);
