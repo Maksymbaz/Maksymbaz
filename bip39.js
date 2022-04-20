@@ -2,19 +2,27 @@ const words =
   'beach bean beauty because become beef before toy upper upset year yellow';
 // 'beach bean beauty because become beef before begin behave behind believe below belt bench benefit best betray better between beyond cabbage cabin cable cactus cage cake call calm camera camp can canal cancel candy cannon canoe canvas canyon capable capital captain car carbon card cargo carpet carry cart case cash casino castle casual cat catalog catch category cattle caught cause caution cave cover coyote crack cradle craft cram crane crash crater crawl crazy cream credit creek crew cricket crime crisp critic crop cross crouch crowd crucial cruel cruise crumble crunch crush cry crystal piano picnic picture piece pig pigeon pill pilot pink pioneer pipe pistol pitch pizza place planet plastic plate play please pledge pluck plug plunge public pudding pull pulp pulse pumpkin punch pupil puppy purchase purity purpose purse push put toast tobacco today toddler toe together toilet token tomato tomorrow tone tongue tonight tool tooth top topic topple torch tornado tortoise toss total tourist toward tower town toy upper upset year yellow';
 
-const arr = words.split(' ');
+const arr = words.split(' '),
+  knownWords = 'toy upper upset year yellow',
+  known = knownWords.split(' ');
 let count = 0,
-  known = 'toy upper upset year yellow',
-  // a = 'toy',
-  // b = 'upper',
-  // c = 'upset',
-  // e = 'year',
-  // k = 'yellow',
-  idx0,
-  idx1,
-  idx2,
-  idx4,
-  idx10;
+  idx = [];
+// a = 'toy',
+// b = 'upper',
+// c = 'upset',
+// e = 'year',
+// k = 'yellow';
+
+// I want to go through the bip39 and write down into a new array indexes of the known words in the bip39.
+//
+idx = getIdxOfKnownWords(idx);
+console.log(idx);
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr.includes(known[i])) {
+//     console.log(arr[i]);
+//   }
+// }
 
 // for (i = 0; i < arr.length; i++) {
 //   if (
@@ -137,10 +145,5 @@ let count = 0,
 // }
 // console.log(count);
 
-// Если есть набор слов, которые мы знаем, можем ли мы положить их в массив и проверить одной командой, совпадает ли текущее слово с элементом в массиве?
-console.log(known);
-for (let i = 0; i < arr.length; i++) {
-  if (arr.includes(known[i])) {
-    console.log(arr[i]);
-  }
-}
+// // Если есть набор слов, которые мы знаем, можем ли мы положить их в массив и проверить одной командой, совпадает ли текущее слово с элементом в массиве?
+// // console.log(known);
