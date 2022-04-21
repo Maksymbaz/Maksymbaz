@@ -1,5 +1,5 @@
 const words =
-  'beach bean beauty because become beef before toy upper upset year yellow';
+  'beach bean beauty upper because become toy beef before upset year behave yellow';
 // 'beach bean beauty because become beef before begin behave behind believe below belt bench benefit best betray better between beyond cabbage cabin cable cactus cage cake call calm camera camp can canal cancel candy cannon canoe canvas canyon capable capital captain car carbon card cargo carpet carry cart case cash casino castle casual cat catalog catch category cattle caught cause caution cave cover coyote crack cradle craft cram crane crash crater crawl crazy cream credit creek crew cricket crime crisp critic crop cross crouch crowd crucial cruel cruise crumble crunch crush cry crystal piano picnic picture piece pig pigeon pill pilot pink pioneer pipe pistol pitch pizza place planet plastic plate play please pledge pluck plug plunge public pudding pull pulp pulse pumpkin punch pupil puppy purchase purity purpose purse push put toast tobacco today toddler toe together toilet token tomato tomorrow tone tongue tonight tool tooth top topic topple torch tornado tortoise toss total tourist toward tower town toy upper upset year yellow';
 
 const arr = words.split(' '),
@@ -7,22 +7,97 @@ const arr = words.split(' '),
   known = knownWords.split(' ');
 let count = 0,
   idx = [];
-// a = 'toy',
-// b = 'upper',
-// c = 'upset',
-// e = 'year',
-// k = 'yellow';
 
-// I want to go through the bip39 and write down into a new array indexes of the known words in the bip39.
-//
-idx = getIdxOfKnownWords(idx);
-console.log(idx);
+known.forEach((a, j) => {
+  idx.push(j);
+});
 
-// for (let i = 0; i < arr.length; i++) {
-//   if (arr.includes(known[i])) {
-//     console.log(arr[i]);
-//   }
-// }
+arr.forEach((a, i) => {
+  arr.forEach((b, j) => {
+    arr.forEach((d, l) => {
+      arr.forEach((e, m) => {
+        arr.forEach((f, n) => {
+          arr.forEach((g, o) => {
+            arr.forEach((h, p) => {
+              if (
+                i != idx[0] &&
+                i != idx[1] &&
+                i != idx[2] &&
+                i != idx[3] &&
+                i != idx[4] &&
+                j != idx[0] &&
+                j != idx[1] &&
+                j != idx[2] &&
+                j != idx[3] &&
+                j != idx[4] &&
+                l != idx[0] &&
+                l != idx[1] &&
+                l != idx[2] &&
+                l != idx[3] &&
+                l != idx[4] &&
+                m != idx[0] &&
+                m != idx[1] &&
+                m != idx[2] &&
+                m != idx[3] &&
+                m != idx[4] &&
+                n != idx[0] &&
+                n != idx[1] &&
+                n != idx[2] &&
+                n != idx[3] &&
+                n != idx[4] &&
+                o != idx[0] &&
+                o != idx[1] &&
+                o != idx[2] &&
+                o != idx[3] &&
+                o != idx[4] &&
+                p != idx[0] &&
+                p != idx[1] &&
+                p != idx[2] &&
+                p != idx[3] &&
+                p != idx[4] &&
+                j != i &&
+                l != i &&
+                l != j &&
+                m != i &&
+                m != j &&
+                m != l &&
+                n != i &&
+                n != j &&
+                n != l &&
+                n != m &&
+                o != i &&
+                o != j &&
+                o != l &&
+                o != m &&
+                o != n &&
+                p != i &&
+                p != j &&
+                p != l &&
+                p != m &&
+                p != n &&
+                p != o
+              )
+                console.log(
+                  known[idx[0]],
+                  known[idx[1]],
+                  known[idx[2]],
+                  a,
+                  known[2],
+                  b,
+                  d,
+                  e,
+                  f,
+                  g,
+                  known[3],
+                  h
+                );
+            });
+          });
+        });
+      });
+    });
+  });
+});
 
 // for (i = 0; i < arr.length; i++) {
 //   if (
@@ -128,7 +203,6 @@ console.log(idx);
 //                               arr[idx10],
 //                               arr[p]
 //                             );
-//                             count++;
 //                           }
 //                         }
 //                       }
@@ -143,7 +217,6 @@ console.log(idx);
 //     }
 //   }
 // }
-// console.log(count);
 
 // // Если есть набор слов, которые мы знаем, можем ли мы положить их в массив и проверить одной командой, совпадает ли текущее слово с элементом в массиве?
 // // console.log(known);
