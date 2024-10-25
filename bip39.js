@@ -218,5 +218,5 @@ arr.forEach((a, i) => {
 //   }
 // }
 
-// // Если есть набор слов, которые мы знаем, можем ли мы положить их в массив и проверить одной командой, совпадает ли текущее слово с элементом в массиве?
+// // “If we have a set of words that we know, can we put them in an array and check with one command whether the current word matches an element in the array?”
 // // console.log(known);
