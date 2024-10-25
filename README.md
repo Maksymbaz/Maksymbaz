@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @Maksymbaz
-- 👀 I’m interested in web development
-- 🌱 I’m currently learning js
+- 👋 Hi, I’m Max
+- 👀 I’m interested in expanding into the world of programming
+- 🌱 I’m currently learning python
 - 💞️ I’m looking to collaborate on ((tbd))
-- 📫 How to reach me t.me @maks_dd
+- 📫 How to reach me: github
 
 <!---
 Maksymbaz/Maksymbaz is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
